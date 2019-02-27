@@ -1,0 +1,219 @@
+﻿/*******************
+    CSS ESTRUTURA
+********************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:100,400,300,600,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i');
+
+/*********************************************** Reset ***********************************************/
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+*::before, *::after { box-sizing: border-box; }
+
+ol, ul, li { list-style: none; }
+
+a, :link, :visited { outline: 0; text-decoration: none; cursor: pointer; }
+
+* input, * select, * textarea { font-family: "Open Sans", Arial, Helvetica, sans-serif; font-size: 12px; }
+
+textarea { resize: none; }
+
+img { border: 0 none; max-width: 100%; }
+
+/*********************************************** Auxiliares ***********************************************/
+
+.ClearBoth { height: 0; line-height: 0; font-size: 0; clear: both; }
+
+.FloatLeft { float: left; }
+
+.FloatRight { float: right; }
+
+.Table { display: table; width: 100%; }
+
+.Cell { display: table-cell; height: 100%; vertical-align: middle; }
+
+.Botao { background: #09f; font-size: 22px; border: 0; padding: 25px 35px; color: #fff; text-transform: uppercase; font-weight: bold; display: inline-block; height: 82px; }
+
+.Voltar { float: right; margin-top: 40px; margin-bottom: 25px; }
+
+.Aba { display: none }
+
+.Aba.active { display: table; }
+
+.Box { background-color: rgba(0,0,0,0.6); /* background-image: url("../imagens/overlay.png"); */ border-radius: 7px; margin: 0 auto 50px; padding: 25px; width: 95%; color: #ffffff; text-align: center; }
+
+h2 { margin-bottom: 40px; font-size: 47px; line-height: 57px; letter-spacing: -1px; }
+h3 { margin-bottom: 25px; font-weight: 500; font-size: 24px; letter-spacing: -1px; line-height: 32px; }
+h4 { }
+h5 { }
+p { font-family: Lato; font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #505050; }
+p.Titulo { font-family: "Lato","Open Sans"; font-size: 32px; font-weight: 800; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #303030; margin-bottom:30px; }
+
+/*********************************************** Estrutura ***********************************************/
+html, body { min-height: 100%; height: 100%; }
+
+body { background-color: #ffffff; font-family: "Open Sans"; font-weight: 100; color: #505050; }
+
+section { display: table; height: 100%; width: 100%; }
+
+section .Content { display: table-cell; vertical-align: middle; position: relative; }
+
+.Conteudo { margin: 0 auto; max-width: 1200px; position: relative; width: 100%; }
+
+.btn { display: inline-block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; -ms-touch-action: manipulation; touch-action: manipulation; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; }
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus { outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+.btn:hover,
+.btn:focus,
+.btn.focus { color: #333; text-decoration: none; }
+.btn:active,
+.btn.active { background-image: none; outline: 0; -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125); }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="cpf"], input[type="cep"], textarea { border: 2px solid #d6d6d6; font-size: 16px; height: 82px; padding: 25px; width: 100%; background: #f8f8f8; border-right: 0; }
+
+textarea { height: 100px; }
+
+select { border: 1px solid #231f20; height: 40px; width: 100%; }
+
+.row { clear: both; display: inline-block; float: left; padding: 15px 0 0; width: 100%; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { position: relative; min-height: 1px; padding-right: 15px; padding-left: 15px; }
+
+
+/*********************************************** Conte�do ***********************************************/
+
+#main { overflow:hidden; }
+
+
+header .Conteudo { max-width: 1600px; }
+header .Logo { max-width: 165px; margin-top: 45px; }
+
+
+.secHome { }
+.secHome .Conteudo { max-width: 1600px; }
+.secHome .Titulos { display: inline-table; vertical-align: middle; margin-top: 200px; }
+.secHome .Titulos * { max-width: 600px; }
+.secHome .Titulos .Botao { margin-top: 25px; }
+.secHome .Destaque { display: inline-table; width: 50%; padding-right: 45px; background-image: url(../images/right-circle.png); background-repeat: no-repeat; background-position: right; background-size: 120px 316px; float: right; vertical-align: top; min-width: 800px; }
+.secHome .Destaque .Empresa { float: right; text-align: right; padding-right: 25px; margin-bottom: 50px; position: relative; }
+.secHome .Destaque .Empresa img { position: relative; z-index: 5; }
+.secHome .Destaque .Comprador { float: left; margin-top: 210px; position: relative; }
+.secHome .Destaque .Comprador img { position: relative; z-index: 5; }
+.secHome .Destaque .Entregador { float: right; text-align: right; position: relative; }
+.secHome .Destaque .Entregador img { position: relative; z-index: 5; }
+.secHome .Destaque .Orange { background-image: url(../images/orange-dot.png); background-repeat: no-repeat; width: 91px; height: 93px; position: absolute; right: 8px; top: -70px; background-size: 100%; z-index: 1; }
+.secHome .Destaque .Green { background-image: url(../images/green-dot.png); background-repeat: no-repeat; width: 134px; height: 134px; background-size: 100%; position: absolute; z-index: 1; left: -75px; top: -30px; }
+.secHome .Destaque .Circle { background-image: url(../images/circle.png); background-repeat: no-repeat; width: 360px; height: 205px; background-size: 100%; position: absolute; z-index: 1; bottom: -165px; left: 190px; }
+
+
+.secServicos { padding-top: 270px; padding-bottom: 170px; position: relative; }
+.secServicos .Content { position: initial; }
+.secServicos .GreenBox { background-size: 100%; background-image: url(../images/greenbox.png); background-repeat: no-repeat; width: 629px; height: 600px; position: absolute; left: -230px; z-index: -1; top: 0; }
+.secServicos .Conteudo { }
+.secServicos .Texto { display: table-cell; vertical-align: middle; }
+.secServicos .Texto * { max-width: 540px; width: 95%; }
+.secServicos .Texto .Titulo { max-width: 500px; }
+.secServicos .Imagem { display: table-cell; text-align: right; }
+
+
+.secFuncionamento { padding-bottom: 200px; }
+.secFuncionamento .Conteudo { -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); max-width: 1600px; text-align: center; padding: 50px 0 150px; background: #fff; }
+.secFuncionamento h2 { color: #0099ff; margin-bottom: 140px; font-family: Lato; font-size: 24px; font-weight: 800; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; text-transform: uppercase; }
+.secFuncionamento h2:after { width: 100%; max-width: 90px; height: 3px; background: #0099ff; content: " "; display: block; margin: 8px auto 0; }
+.secFuncionamento .Funcoes { max-width: 1400px; margin: 0 auto; }
+.secFuncionamento .Funcoes .Funcao { text-align: center; display: table-cell; width: 33.3%; vertical-align: top; padding: 0 50px; }
+.secFuncionamento .Funcoes .Funcao .Imagem { margin-bottom: 100px; height: 135px; line-height: 135px; }
+.secFuncionamento .Funcoes .Funcao .Imagem img { max-width: 135px; }
+.secFuncionamento .Funcoes .Funcao .Titulo { margin-bottom: 0; text-transform: uppercase; font-size: 24px; font-weight: 800; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #303030; }
+.secFuncionamento .BlueBox { position: absolute; z-index: -5; right: -75px; bottom: -90px; }
+.secFuncionamento .Blue01 { width: 146px; height: 484px; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15); background-color: #0090ef; position: absolute; right: 0; z-index: -5; bottom: 0; }
+.secFuncionamento .Blue02 { width: 387px; height: 182px; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15); background-color: #0099ff; position: absolute; bottom: 35px; z-index: -2; right: -47px; }
+
+
+.secApp { padding-bottom: 200px; }
+.secApp .Conteudo { max-width: 1400px; }
+.secApp .Texto { display: table-cell; vertical-align: middle; }
+.secApp .Texto * { max-width: 590px; }
+.secApp .Imagem { display: table-cell; text-align: center; width: 50%; }
+.secApp .OrangeBox { width: 523px; position: absolute; right: -224px; bottom: 0; z-index: -1; }
+.secApp .OrangeBox .DarkOrange { width: 523px; height: 523px; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15); background-color: #ff9900; border-radius: 50%; }
+.secApp .OrangeBox .LightOrange { width: 383px; height: 383px; box-shadow: 1px 2px 10px 0 rgba(0, 0, 0, 0.15); background-color: #ffae34; position: absolute; top: 50%; left: 50%; margin-top: calc(-383px/2); margin-left: calc(-383px/2); border-radius: 50%; }
+
+
+.secNews { padding-bottom: 200px; }
+.secNews .Conteudo { -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); max-width: 1400px; text-align: center; padding: 50px 0; }
+.secNews .Titulo { color: #0099ff; line-height: 50px; max-width: 700px; margin: 0 auto 100px; width: 90%; font-size: 40px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; }
+.secNews form { font-size: 0; padding: 15px; }
+.secNews form input[type=text], .secNews form input[type=email] { display: inline-block; max-width: 420px; vertical-align: top; }
+.secNews form input[type=submit], .secNews form input[type=button] { vertical-align: top; display: inline-block; white-space: normal; }
+
+
+footer { background: #333333; color: #ffffff; height: 100px; }
+
+@media screen and (max-width: 1200px) {
+    section, header { padding: 0 50px; }
+    .secHome .Titulos { display: table; vertical-align: middle; width: 100%; margin: 50px 0; z-index: 10; position: relative; }
+    .secFuncionamento .Funcoes .Funcao { padding: 0 20px; }
+    .secApp .Imagem img { max-width: 350px; }
+}
+
+@media screen and (max-width: 1100px) {
+    .secApp .OrangeBox { right: -510px; }
+    .secServicos .GreenBox { width: 440px; }
+}
+
+@media screen and (max-width: 965px) {
+    body { padding: 0 ; }
+    header .Conteudo { max-width: 1600px; text-align: center; }
+    .secHome { z-index: 10; }
+    .secHome .Titulos * { max-width: 100%; text-align: center; }
+    .secHome .Titulos .Botao { margin-top: 25px; display: block; }
+    .secHome .Destaque .Empresa, .secHome .Destaque .Comprador, .secHome .Destaque .Entregador { width: 47% }
+    .secHome .Destaque { min-width: 100%; }
+    .secApp .Imagem img { max-width: 85%; }
+
+    p.Titulo { font-weight: bold; font-size: 25px; line-height: 32px; }
+    p { font-size: 20px; line-height: 28px; }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="cpf"], input[type="cep"], textarea { border: 2px solid #d6d6d6; }
+}
+
+@media screen and (max-width: 768px) {
+    .secHome .Destaque { min-width: 100%; background-size: 70px; }
+    .secHome .Destaque .Comprador { float: left; margin-top: 160px; }
+    .secHome .Destaque .Circle { display:none }
+    .secServicos { padding-top: 170px; padding-bottom: 100px; }
+    .secServicos .GreenBox { width: 300px; }
+    .secServicos .Texto { display: table; vertical-align: middle; margin-bottom: 35px; }
+    .secServicos .Imagem { display: table; text-align: center; width: 100%; }
+    .secFuncionamento { padding-bottom: 100px; }
+    .secFuncionamento h2 { margin-bottom: 85px; }
+    .secFuncionamento .Conteudo { padding: 50px 0 0; }
+    .secFuncionamento .Funcoes .Funcao { width: 100%; display: table; margin-bottom: 70px; }
+    .secFuncionamento .Funcoes .Funcao .Imagem { margin-bottom: 25px; }
+    .secApp { padding-bottom: 100px; }
+    .secApp .Imagem { display: table; text-align: center; width: 100%; max-width: 350px; margin: 0 auto 50px; }
+    .secApp .Texto { display: table; vertical-align: middle; }
+    .secNews .Titulo { font-size: 35px; line-height: 45px; margin: 0 auto 50px; }
+}
+
+@media screen and (max-width: 500px) {
+    h2 { font-size: 37px; line-height: 47px; }
+    .Botao { height: auto; margin: 0 auto; font-size: 18px; line-height: 26px; }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="cpf"], input[type="cep"], textarea { max-width: 240px; margin: 0 auto; }
+    .secHome .Destaque .Comprador { float: left; margin-top: 70px; }
+    .secServicos .Texto { display: table; vertical-align: middle; }
+    .secServicos .Imagem { display: table; text-align: center; }
+    .secFuncionamento .Funcoes .Funcao .Imagem { margin-bottom: 15px; height: auto; line-height: 0; }
+    .secFuncionamento .Funcoes .Funcao .Imagem img { max-width: 90px; }
+    .secFuncionamento { padding-bottom: 50px; margin-bottom: 50px; }
+    .secApp { padding-bottom: 50px; }
+    .secNews .Titulo { font-size: 22px; line-height: 28px; margin: 0 auto 20px; }
+}
+
+@media screen and (max-width: 400px) {
+}
