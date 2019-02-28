@@ -48,7 +48,7 @@ h3 { margin-bottom: 25px; font-weight: 500; font-size: 24px; letter-spacing: -1p
 h4 { }
 h5 { }
 p { font-family: Lato; font-size: 24px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #505050; }
-p.Titulo { font-family: "Lato","Open Sans"; font-size: 32px; font-weight: 800; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #303030; margin-bottom:30px; }
+p.Titulo { font-family: "Lato","Open Sans"; font-size: 32px; font-weight: 800; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; color: #303030; margin-bottom: 30px; }
 
 /*********************************************** Estrutura ***********************************************/
 html, body { min-height: 100%; height: 100%; }
@@ -87,15 +87,15 @@ select { border: 1px solid #231f20; height: 40px; width: 100%; }
 
 /*********************************************** Conte�do ***********************************************/
 
-#main { overflow:hidden; }
+#main { overflow: hidden; }
 
 
-header .Conteudo { max-width: 1600px; }
+header .Conteudo { max-width: 1600px; padding-left: 50px; }
 header .Logo { max-width: 165px; margin-top: 45px; }
 
 
 .secHome { }
-.secHome .Conteudo { max-width: 1600px; }
+.secHome .Conteudo { max-width: 1600px; padding-left: 50px; }
 .secHome .Titulos { display: inline-table; vertical-align: middle; margin-top: 200px; }
 .secHome .Titulos * { max-width: 600px; }
 .secHome .Titulos .Botao { margin-top: 25px; }
@@ -155,8 +155,17 @@ header .Logo { max-width: 165px; margin-top: 45px; }
 
 footer { background: #333333; color: #ffffff; height: 100px; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1600px) {
+    .secHome .Conteudo { padding-left: 0px; }
+}
+
+@media screen and (min-width: 1201px) {
+    .secHome .Conteudo { padding-left: 50px; }
+}
+
+@media screen and (max-width: 1150px) {
     section, header { padding: 0 50px; }
+    header .Conteudo, .secHome .Conteudo { padding-left: 0 }
     .secHome .Titulos { display: table; vertical-align: middle; width: 100%; margin: 50px 0; z-index: 10; position: relative; }
     .secFuncionamento .Funcoes .Funcao { padding: 0 20px; }
     .secApp .Imagem img { max-width: 350px; }
@@ -168,7 +177,7 @@ footer { background: #333333; color: #ffffff; height: 100px; }
 }
 
 @media screen and (max-width: 965px) {
-    body { padding: 0 ; }
+    body { padding: 0; }
     header .Conteudo { max-width: 1600px; text-align: center; }
     .secHome { z-index: 10; }
     .secHome .Titulos * { max-width: 100%; text-align: center; }
@@ -185,7 +194,7 @@ footer { background: #333333; color: #ffffff; height: 100px; }
 @media screen and (max-width: 768px) {
     .secHome .Destaque { min-width: 100%; background-size: 70px; }
     .secHome .Destaque .Comprador { float: left; margin-top: 160px; }
-    .secHome .Destaque .Circle { display:none }
+    .secHome .Destaque .Circle { display: none }
     .secServicos { padding-top: 170px; padding-bottom: 100px; }
     .secServicos .GreenBox { width: 300px; }
     .secServicos .Texto { display: table; vertical-align: middle; margin-bottom: 35px; }
