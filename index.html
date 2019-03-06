@@ -117,16 +117,16 @@
             <div class="Content">
                 <div class="Conteudo">
                     <div class="Titulo">Inscreva-se para receber novidades antes de todo mundo</div>
-                    <!--<form class="formNews">
+                    <form class="formNews" id="frmContato">
                         <input type="email" placeholder="Insira seu e-mail aqui" id="txtEmail" name="txtEmail" />
-                        <input type="submit" value="Garantir acesso antecipado" class="Botao" />
-                    </form>-->
-                    <!-- Begin Mailchimp Signup Form -->
+                        <input type="submit" value="Garantir acesso antecipado" id="btnEnviar" class="Botao" />
+                        <div id="vldMessage"><span>Enviando...</span></div>
+                    </form>                    
+                    <!-- Begin Mailchimp Signup Form
                     <div id="mc_embed_signup">
                         <form action="https://weme.us9.list-manage.com/subscribe/post?u=e3a47b4f5e9ab9d6cc7ec5214&amp;id=c186365b3a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate formNews" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
                                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Insira seu e-mail aqui" required>
-                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e3a47b4f5e9ab9d6cc7ec5214_c186365b3a" tabindex="-1" value=""></div>
                                 <input type="submit" value="Garantir acesso antecipado" name="subscribe" id="mc-embedded-subscribe" class="button Botao">
                             </div>
@@ -142,12 +142,13 @@
     <link media="all" rel="stylesheet" href="css/bootstrap.min.css" />
     <link media="all" rel="stylesheet" href="css/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/funcoes.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135263605-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'UA-135263605-1');
     </script>
 

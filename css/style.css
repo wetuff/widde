@@ -149,11 +149,17 @@ header .Logo { max-width: 165px; margin-top: 45px; }
 .secNews .Conteudo { -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); -moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.2); max-width: 1400px; text-align: center; padding: 50px 0; }
 .secNews .Titulo { color: #0099ff; line-height: 50px; max-width: 700px; margin: 0 auto 100px; width: 90%; font-size: 40px; font-weight: 500; font-style: normal; font-stretch: normal; line-height: normal; letter-spacing: normal; }
 .secNews form { font-size: 0; padding: 15px; }
-.secNews form input[type=text], .secNews form input[type=email] { display: inline-block; max-width: 420px; vertical-align: top; }
+.secNews form input[type=text], .secNews form input[type=email] { display: inline-block; max-width: 500px; vertical-align: top; }
 .secNews form input[type=submit], .secNews form input[type=button] { vertical-align: top; display: inline-block; white-space: normal; }
 
 
 footer { background: #333333; color: #ffffff; height: 100px; }
+
+
+#vldMessage { background: #09f; font-size: 22px; border: 0; color: #fff; text-transform: uppercase; font-weight: bold; display: none; height: 82px; width: 100%; max-width: 500px; }
+#vldMessage span { display: table-cell; padding: 25px 35px; }
+#vldMessage .erro { background-color: red; }
+#vldMessage .sucesso { background-color: green; }
 
 @media screen and (min-width: 1600px) {
     .secHome .Conteudo { padding-left: 0px; }
@@ -169,6 +175,7 @@ footer { background: #333333; color: #ffffff; height: 100px; }
     .secHome .Titulos { display: table; vertical-align: middle; width: 100%; margin: 50px 0; z-index: 10; position: relative; }
     .secFuncionamento .Funcoes .Funcao { padding: 0 20px; }
     .secApp .Imagem img { max-width: 350px; }
+    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="cpf"], input[type="cep"], textarea { border: 2px solid #d6d6d6; }
 }
 
 @media screen and (max-width: 1100px) {
@@ -188,7 +195,7 @@ footer { background: #333333; color: #ffffff; height: 100px; }
 
     p.Titulo { font-weight: bold; font-size: 25px; line-height: 32px; }
     p { font-size: 20px; line-height: 28px; }
-    input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="cpf"], input[type="cep"], textarea { border: 2px solid #d6d6d6; }
+    
 }
 
 @media screen and (max-width: 768px) {
